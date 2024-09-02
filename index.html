@@ -16,11 +16,13 @@
             width: 100%;
             height: 100vh; /* Full viewport height */
             display: flex;
+            flex-direction: column; /* Stack elements vertically */
             justify-content: center;
             align-items: center;
             background: url('Image1.jpg') no-repeat center center;
             background-size: cover;
             transition: background 0.5s ease; /* Smooth transition for background change */
+            text-align: center; /* Center-align text inside the container */
         }
 
         /* Change background image on hover */
@@ -28,12 +30,25 @@
             background: url('Image2.jpg') no-repeat center center;
             background-size: cover;
         }
+
+        /* Style for the heading */
+        .heading {
+            font-size: 2rem;
+            color: white; /* Ensure the text is readable on both images */
+            margin-bottom: 1rem; /* Space between heading and image */
+        }
+
+        /* Style for the image */
+        .hover-image {
+            width: 80%; /* Adjust as needed */
+            max-width: 600px; /* Maximum width to ensure it doesn't get too large */
+        }
     </style>
 </head>
 <body>
     <div class="hover-area">
-        <h1>Hover Over This Area</h1>
-        <p>See the background image change!</p>
+        <h1 class="heading">Hover Over This Area</h1>
+        <img src="Image1.jpg" alt="Centered Image" class="hover-image">
     </div>
 </body>
 </html>
