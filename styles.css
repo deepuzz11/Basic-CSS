@@ -1,21 +1,23 @@
-body {
+/* Reset default margin and padding */
+body, h1, p {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
 }
 
+/* Style the hover area */
 .hover-area {
     width: 100%;
-    height: 100vh; /* Adjust height as needed */
+    height: 100vh; /* Full viewport height */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('Image1.jpg') no-repeat center center;
+    background: url('images/Image1.jpg') no-repeat center center;
     background-size: cover;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease; /* Smooth transition for background change */
 }
 
+/* Change background image on hover */
 .hover-area:hover {
-    background: url('Image2.jpg') no-repeat center center;
+    background: url('images/Image2.jpg') no-repeat center center;
     background-size: cover;
-    cursor: url('Image2.jpg'), auto; /* Optional: Change the cursor to Image2 */
 }
