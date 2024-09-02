@@ -8,40 +8,20 @@ body {
     background-color: #f4f4f4;
 }
 
-.landing-page {
+.container {
     text-align: center;
 }
 
-.hover-container {
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.hover-text {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-#hover-image {
+.hover-image {
     width: 300px;
-    height: auto;
-    border: 2px solid #333;
-    transition: opacity 0.3s ease;
+    height: 200px;
+    background-image: url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+    margin-top: 20px;
 }
 
-.hover-text:hover {
-    color: #007BFF; /* Change text color on hover */
-}
-
-.hover-text:hover ~ #hover-image {
-    opacity: 0;
-}
-
-.hover-text:hover ~ #hover-image:before {
-    content: url('image2.jpg'); /* Image to show on hover */
-    position: absolute;
-    opacity: 1;
+.hover-image:hover {
+    background-image: url('image2.jpg');
 }
