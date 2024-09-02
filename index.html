@@ -4,7 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styles to reset margins and paddings */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for the hover area */
+        .hover-area {
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('Image1.jpg') no-repeat center center;
+            background-size: cover;
+            transition: background 0.5s ease; /* Smooth transition for background change */
+        }
+
+        /* Change background image on hover */
+        .hover-area:hover {
+            background: url('Image2.jpg') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
     <div class="hover-area">
