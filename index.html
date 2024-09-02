@@ -6,7 +6,7 @@
     <title>Hover Effect Example</title>
     <style>
         /* Reset default margin and padding */
-        body, h1, p {
+        body, h1 {
             margin: 0;
             padding: 0;
         }
@@ -35,24 +35,13 @@
         .heading {
             font-size: 2rem;
             color: white; /* White text color */
-            margin-bottom: 1rem; /* Space between heading and image */
-        }
-
-        /* Style for the image */
-        .hover-image {
-            width: 80%; /* Adjust as needed */
-            max-width: 600px; /* Maximum width to ensure it doesn't get too large */
-            position: relative;
-            top: 20px; /* Adjust vertical position as needed */
-            /* Center horizontally if desired */
-            margin: 0 auto;
+            margin: 0; /* Remove default margin */
         }
     </style>
 </head>
 <body>
     <div class="hover-area">
         <h1 class="heading">Hover Over This Area</h1>
-        <img src="Image1.jpg" alt="Positioned Image" class="hover-image">
     </div>
 </body>
 </html>
