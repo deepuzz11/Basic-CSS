@@ -15,7 +15,7 @@ body {
 .hover-image {
     width: 300px;
     height: 200px;
-    background-image: url('image1.jpg');
+    background-image: url('Image1.jpg');
     background-size: cover;
     background-position: center;
     transition: background-image 0.3s ease;
@@ -23,5 +23,5 @@ body {
 }
 
 .hover-image:hover {
-    background-image: url('image2.jpg');
+    background-image: url('Image2.jpg');
 }
