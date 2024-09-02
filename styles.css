@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.landing-page {
+    text-align: center;
+}
+
+.hover-container {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.hover-text {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#hover-image {
+    width: 300px;
+    height: auto;
+    border: 2px solid #333;
+    transition: opacity 0.3s ease;
+}
+
+.hover-text:hover {
+    color: #007BFF; /* Change text color on hover */
+}
+
+.hover-text:hover ~ #hover-image {
+    opacity: 0;
+}
+
+.hover-text:hover ~ #hover-image:before {
+    content: url('image2.jpg'); /* Image to show on hover */
+    position: absolute;
+    opacity: 1;
+}
