@@ -1,27 +1,21 @@
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
+}
+
+.hover-area {
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    text-align: center;
-}
-
-.hover-image {
-    width: 300px;
-    height: 200px;
-    background-image: url('Image1.jpg');
+    background: url('Image1.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    transition: background-image 0.3s ease;
-    margin-top: 20px;
+    transition: background 0.3s ease;
 }
 
-.hover-image:hover {
-    background-image: url('Image2.jpg');
+.hover-area:hover {
+    background: url('Image2.jpg') no-repeat center center;
+    background-size: cover;
+    cursor: url('Image2.jpg'), auto; /* Optional: Change the cursor to Image2 */
 }
