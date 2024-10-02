@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hover Effect Example</title>
+    <title>Responsive Hover Effect</title>
     <style>
         /* Reset default margin and padding */
         body, h1 {
@@ -16,7 +16,7 @@
             width: 100%;
             height: 100vh; /* Full viewport height */
             display: flex;
-            flex-direction: column; /* Stack elements vertically */
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background: url('Image1.jpg') no-repeat center center;
@@ -33,22 +33,35 @@
         /* Style for the heading */
         .heading {
             font-size: 6vw; /* Responsive font size based on viewport width */
-            color: white; /* White text color */
-            margin: 0; /* Remove default margin */
+            color: white;
             text-align: center; /* Center align text */
-            padding: 10px; /* Add padding for mobile spacing */
+            padding: 10px;
         }
 
-        /* Media query for smaller screens */
+        /* Media query for smaller screens (tablets and phones) */
         @media (max-width: 768px) {
             .heading {
-                font-size: 8vw; /* Increase font size for smaller screens */
+                font-size: 8vw; /* Adjust font size for smaller screens */
             }
         }
 
         @media (max-width: 480px) {
             .heading {
-                font-size: 10vw; /* Further increase font size for very small screens */
+                font-size: 10vw; /* Increase font size for very small screens */
+            }
+            .hover-area {
+                background-size: contain; /* Make sure background image fits better on smaller screens */
+                background-position: center; /* Ensure background image is centered */
+            }
+        }
+
+        /* Additional mobile optimizations for very small screens */
+        @media (max-width: 360px) {
+            .heading {
+                font-size: 12vw; /* Increase font size further for smaller devices */
+            }
+            .hover-area {
+                padding: 20px; /* Add some padding for better spacing on tiny devices */
             }
         }
     </style>
