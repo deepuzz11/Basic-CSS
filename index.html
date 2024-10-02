@@ -32,9 +32,24 @@
 
         /* Style for the heading */
         .heading {
-            font-size: 2rem;
+            font-size: 6vw; /* Responsive font size based on viewport width */
             color: white; /* White text color */
             margin: 0; /* Remove default margin */
+            text-align: center; /* Center align text */
+            padding: 10px; /* Add padding for mobile spacing */
+        }
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .heading {
+                font-size: 8vw; /* Increase font size for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .heading {
+                font-size: 10vw; /* Further increase font size for very small screens */
+            }
         }
     </style>
 </head>
